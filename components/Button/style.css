@@ -1,0 +1,35 @@
+@value colors: "../../assets/colors.css";
+@value primary, success, error from colors;
+
+.button {
+  color: #ecf0f1;
+  background-color: primary;
+  padding: 10px 15px;
+  font-weight: bold;
+  border: 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  /*background-color: color(primary lightness(+10%));*/
+  background-color: color(#444 lightness(+10%));
+}
+
+.success {
+  composes: button;
+  background-color: success;
+}
+
+.success:hover {
+  background-color: #2ecc71;
+}
+
+.error {
+  composes: button;
+  background-color: error;
+}
+
+.error:hover {
+  background-color: #e74c3c;
+}

@@ -1,0 +1,7 @@
+@value xsmall: (max-width: 34em);
+@value small: (min-width: 34em);
+@value medium: (min-width: 48em);
+@value large: (min-width: 62em);
+@value xlarge: (min-width: 75em);
+
+@value size: 20px;

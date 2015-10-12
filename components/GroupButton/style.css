@@ -1,0 +1,49 @@
+@value medias: "../../assets/medias.css";
+@value small, size from medias;
+@value localSize: 20px;
+
+.group {
+  display: block;
+  padding: 0;
+  margin-top: calc(20px * 0.5);
+  margin-bottom: calc(size * 0.5);
+  margin-left: calc(localSize * 0.5);
+  margin-right: calc(20px - localSize);
+}
+
+.group .button:first-child {
+  border-radius: 5px 5px 0 0;
+}
+
+.group .button:last-child {
+  border-radius: 0 0 5px 5px;
+}
+
+.button {
+  display: block;
+  padding: 5px 10px;
+  border: 1px solid black;
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+.active {
+  composes: button;
+  background-color: #e74c3c;
+}
+
+@media small {
+  .group .button:first-child {
+    border-radius: 5px 0 0 5px;
+    margin-left: 0;
+  }
+
+  .group .button:last-child {
+    border-radius: 0 5px 5px 0;
+  }
+
+  .button {
+    display: inline-block;
+    margin-left: 3px;
+  }
+}
