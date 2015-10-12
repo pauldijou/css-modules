@@ -3,5 +3,3 @@
 @value medium: (min-width: 48em);
 @value large: (min-width: 62em);
 @value xlarge: (min-width: 75em);
-
-@value size: 20px;

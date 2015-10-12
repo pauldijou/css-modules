@@ -12,8 +12,7 @@
 }
 
 .button:hover {
-  /*background-color: color(primary lightness(+10%));*/
-  background-color: color(#444 lightness(+10%));
+  background-color: color(#2c3e50 lightness(+10%));
 }
 
 .success {

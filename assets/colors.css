@@ -1,3 +1,7 @@
 @value primary: #2c3e50;
 @value success: #27ae60;
 @value error: #c0392b;
+
+@value primary-alt: color(#2c3e50 lightness(+10%));
+@value success-alt: color(#27ae60 lightness(+10%));
+@value error-alt: color(#c0392b lightness(+10%));

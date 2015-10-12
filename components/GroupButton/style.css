@@ -1,14 +1,10 @@
 @value medias: "../../assets/medias.css";
-@value small, size from medias;
-@value localSize: 20px;
+@value small from medias;
 
 .group {
   display: block;
   padding: 0;
-  margin-top: calc(20px * 0.5);
-  margin-bottom: calc(size * 0.5);
-  margin-left: calc(localSize * 0.5);
-  margin-right: calc(20px - localSize);
+  margin: 0;
 }
 
 .group .button:first-child {
