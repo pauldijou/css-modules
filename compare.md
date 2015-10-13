@@ -35,6 +35,32 @@
 .button-error { /* red */ }
 ```
 
+## Problems
+
+- global scope
+- isolation / side effects
+- (nearly) non-determinisc resolution
+- dead code elimination
+- "minification"
+- (dependencies)
+- (variables)
+
+## Inline styles
+
+```javascript
+render() {
+  const styles = {
+    margin: 0
+  };
+  return (<div style={styles}>Hey</div>);
+}
+```
+
+- accessibility
+- devtools
+- cache
+- performances ?
+
 ## CSS Modules
 
 ```css
@@ -65,7 +91,7 @@ render() {
 <button class="style__button__zj45 style__button-error__34az9">Error</html>
 ```
 
-### Impots
+### Imports
 
 ```css
 /* colors.css */
@@ -117,7 +143,7 @@ render() {
 </button>
 ```
 
-#### Beyond
+### Beyond
 
 ```css
 .element {
